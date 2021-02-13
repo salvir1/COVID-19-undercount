@@ -1,0 +1,24 @@
+# Common data integrity issues in widely available COVID-19 case data
+
+One of the most common metrics used to monitor the COVID-19 pandemic in this country is the tally of daily antigen case diagnoses. We know, however, that there are data integrity issues with these data. We also know that some of these issues were acute during the early stages of the pandemic. This article demonstrates how the well-known, but not necessarily well-understood, data integrity issue of undercounting can impact time period comparisons of the daily antigen case diagnosis data.
+
+As the COVID-19 outbreak emerged in this country in early 2020, the CDC was unable to quickly respond to the need for antibody testing capacity and for collecting the data from the tests that were being administered. The problems were so acute that organizations that were not normally involved in either line of work stepped in to try to fill the void. University research labs added testing capacity. News organizations like the New York Times and The Atlantic stepped in to collect and compile case diagnosis data--which they continue to do. Notwithstanding these tremendous civic efforts, data collected during the early phase of the outbreak had some significant flaws. The following cautionary message has been on the [New York Times github page](https://github.com/nytimes/covid-19-data) since the early days of the pandemic, "*Because of the widespread shortage of testing, however, the data is necessarily limited in the picture it presents of the outbreak.*" 
+
+How can these early data integrity issues affect comparisons across time periods? A few days ago, on Sunday, February 7, 2021, the New York Times published a chart comparing the average daily new COVID-19 case count by county compared to that county's previous peak. Some of the peaks being used for comparison occurred during the spring of 2020 when undercounting for the reasons above was most acute. For illustrative purposes, I recreated the New York Times chart with data that has been recalibrated to address the data integrity issues. The assumptions that feed into my recalibration come from an analysis that I did to measure the extent of the undercounting then versus now which is described in [another article--NEED SOURCE](). This analysis has its own set of limitations, so the recalibrations are only educated guesses. Hence, I made several charts to show a range of possibilities.
+
+
+
+
+A number of published studies have explored the well-known issue that the number of reported positive case diagnoses under-represents the number of actual COVID-19 infections. Some of the reasons are due to the nature of the disease--not all people infected with COVID-19 develop symptoms, or they develop symptoms that are so mild that they don't seek testing. Some of the reasons are due to the sensitivity and timeliness of the tests. 
+
+
+explores some of these issues--in particular the issue of testing shortages and lack of coherent data collection that led to undercounting. I have been trying to understand the scope of these issues and think of ways to add 
+he CDC was unable to respond The country was faced with numerous challenges regarding antigen case diagnosis and data collection in the early phases of the COVID pandemic, what kind of data integrity issues might these challenges have caused? 
+
+Antigen test kit shortages were acute in the early phase of the pandemic--leading to speculation that case counts vastly undercounted actual COVID-19 infections. The test kit shortage was significant. It persisted through the spring months. Hence, the undercount rate for the regions of the country with early peaks is likely to be higher than the undercount rate for the regions of the country that had later peaks. It's also likely to be higher than today's undercount rate. The difference in testing availability between then and now limits the interpretability of time comparisons like the one the in the New York Times chart.
+
+The team can't be faulted. In fact, they--and others like them such as the Atlantic and St. John's University--were stepping in to collect and publish COVID-19 data to fill a vacuum left by the CDC. Their efforts have been vital to the scientists and officials seeking to understand and control the spread of the pandemic and to the thousands of amateur data detectives like me who have dug into their published COVID-19 data. 
+
+I recently completed an analysis of the undercount rate early in the outbreak compared to the outbreak after testing had become more widespread. (The results of that analysis are published separately). Using the results of that study, I decided to re-weight the case count numbers to--somewhat--more accurately reflect actual infections, and then recreate the New York Times chart with the re-weighted data.
+
+Comparing the two charts, the main differences are in the Northeast and midwest--areas that experienced early outbreaks. 
