@@ -1,0 +1,26 @@
+# A common data integrity issue in widely available COVID-19 case data
+
+<img align="right" src="img/all_august_before_after.png" width='450' height='auto' ></img>
+
+One of the most common metrics used to monitor the COVID-19 pandemic in this country is the tally of daily antigen case diagnoses. We know, however, that there are data integrity issues with these data. One particular issue with the case data is that the rate at which actual infections have been confirmed with a case diagnosis has not been constant throughout the course of the pandemic. Undercounting was most acute during the early stages of the pandemic. This article demonstrates how the well-known, but not necessarily well-understood, data integrity issue of undercounting can impact time period comparisons of the daily antigen case diagnosis data.
+
+As the COVID-19 outbreak emerged in this country in early 2020, the CDC was unable to quickly respond to the need for antibody testing capacity and for collecting the data from the tests that were being administered. The problems were so acute that organizations that were not normally involved in either line of work stepped in to try to fill the void. University research labs added testing capacity. News organizations like the New York Times and The Atlantic stepped in to collect and compile case diagnosis data--which they continue to do. Notwithstanding these tremendous civic efforts, many cases went undiagnosed. The following cautionary message has been on the [New York Times github page](https://github.com/nytimes/covid-19-data) since the early days of the pandemic, "*Because of the widespread shortage of testing, however, the data is necessarily limited in the picture it presents of the outbreak.*" 
+
+How can these early data integrity issues affect comparisons across time periods? A few days ago, on Sunday, February 7, 2021, the New York Times published a chart comparing the average daily new COVID-19 case count by county compared to that county's previous peak. I believe the purpose of the chart was to show which parts of the country are worse off now (as of February 6, 2021) than during prior peaks. Some of the peaks being used for comparison occurred during the spring of 2020 when undercounting for the reasons mentioned above was most acute. 
+
+For illustrative purposes, I recreated the New York Times chart (continental US only). That's the first of the four charts below. The other three charts use the same set of data except that the case counts prior to June 1, 2020 have been increased to try to correct for the data integrity issues. The assumptions that feed into the charts with the recalibrated data come from an analysis that I did to measure the extent of the undercounting then versus now which is described in [a separate article--NEED SOURCE](). The chart above that compares undercount rates comes from this analysis. This analysis has its own set of limitations, so the recalibrations are only educated guesses. Hence, I made several charts to show a range of possibilities ranging from a low rate of recalibration (counts prior to June 1, 2020 were increased about 2x compared to the rest) to a high rate of recalibration (counts prior to June 2, 2020 were increased 3.5x).
+
+<div class="row">
+    <img src="img/curr_vs_peak_covid.png" width='350' height='auto' ></img>
+    <img src="img/low_recal_curr_vs_peak_covid.png" width='350' height='auto' ></img>
+</div> 
+<div class="row">
+    <img src="img/med_recal_curr_vs_peak_covid.png" width='350' height='auto' ></img>
+    <img src="img/high_recal_curr_vs_peak_covid.png" width='350' height='auto' ></img>
+</div> 
+
+All four charts are comparable throughout most of the US except in the northeast--the area that experienced the worst of the early outbreak. More of the northeast is red in the first chart than it is in the other charts. The reason for this is that each county's color is determined by comparing the current daily case count (as of February 6, 2021) to the prior peak. The counties that shifted from red in the first chart to green in the others were the ones that had their peak rates calibrated upwards to try to correct for the undercounting that was occurring at the time. The effect on the charts is that less of the northeast appears to be experiencing its most significant outbreak now.
+
+Which is these charts is correct? Possibly none of them. The undercount data integrity issue is not easily addressed. The major takeaway is that time period comparisons using the COVID-19 case data ought to be done with caution. 
+
+This isn't the only data integrity issue related to undercounting lurking in the daily case data. Nor is it the most important. Public health agencies and governments are relying on daily case counts as one of the most important metrics to monitor the spread of COVID in their communities. Could further data integrity issues with regards to undercounting be impacting their ability to understand important changes in a timely manner? This topic is explored in a [separate article]().
