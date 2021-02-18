@@ -23,9 +23,11 @@ But first things first. Let's take another look at the data that feeds into the 
 
 <img align="center" src="img/slope_comparisons.png" width='600' height='auto' ></img>
 
-Most of the data is normally distributed, but there is one extreme outlier. That outlier happens to be New York. The infection estimate from the seroprevalence data is actually *decreasing* which you can see in the chart below. Clearly something is up with these data. 
+Most of the data is normally distributed, but there is one extreme outlier. That outlier happens to be New York. 
 
 <img align="center" src="img/NY_infections_vs_cases.png" width='600' height='auto' ></img>
+
+The infection estimate from the seroprevalence data is actually *decreasing* which you can see in the chart below. Clearly something is up with these data. Actually, at least two things may be impacting the New York state seroprevalence numbers over time. One is that an additional laboratory was brought online to process the New York data beginning in November. This change coincides with a big decrease in the New York state infection estimate based on seroprevalence. The new lab may be drawing from a different population within state. Its testing method may have different levels of sensitivity and specificity. Separate from the The other potential data integrity issue relates to the length of time that antibodies stay in the bloodstream at detectable levels post-infection. 
 
 Let's now take a look at the nationwide weighted average of the seroprevalence numbers by age group over time.
 
