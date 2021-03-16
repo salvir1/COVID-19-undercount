@@ -4,14 +4,14 @@
 <img align="right" src="img/cases_by_age_and_period.png" width='500' height='auto' ></img>
 <img align="right" src="img/seroprev_by_age_and_period.png" width='500' height='auto' ></img>
 
-The two charts to the right are time series measures of the percent of the population that has been infected with COVID. The top chart to the right shows a time series of cumulative positive COVID case diagnoses throughout the United States for four separate age groups. The case count numbers are assumed to be a proxy for actual infections and they are widely reported by the media and monitored regularly by public health agencies and government officials. Numerous studies, however, point to substantially more people being infected with COVID-19 than diagnosed. The bottom chart displays a time series estimate of the percent of the population that has tested positive for the presence of antibodies--a robust indicator of prior COVID infection. These estimates are likely to more accurately reflect the true scope of COVID infection in the United States. 
+The two time series charts to the right are different measures of the percent of the population that has been infected with COVID. The top chart to the right shows a time series of cumulative positive COVID case diagnoses throughout the United States for four separate age groups. The case count numbers are often assumed to be a proxy for actual infections and they are widely reported by the media and monitored regularly by public health agencies and government officials. Numerous studies, however, point to substantially more people being infected with COVID-19 than diagnosed. The bottom chart displays a time series estimate of the percent of the population that has tested positive for the presence of antibodies--a robust indicator of prior COVID infection. These estimates are likely to more accurately reflect the true scope of COVID infection in the United States. 
 
 The charts share the same x scales and y scales. The substantial difference between the two provides a sense of how much case diagnoses undercount actual infections. This article will explore the usefulness of using the seroprevalence dataset that went into the bottom chart to estimate actual COVID infections from case counts. We will start by considering the strength and the limitations of the data that feed into these two charts. 
 
 ### *Measuring cases*
 Every day thousands of people across the country are tested for active COVID infections. The results of these immunoassay tests are compiled and used by governments and public health agencies to determine policy. They are reported by news organizations across the country. Underlying the use of these data is the assumption that the aggregation of these tests is a good baromater of the scope of COVID infection in the broader population. 
 
-What is usually missing from the reports of the COVID case data is an acknowledgement that these numbers are just a sample of the total number of active COVID infections. Most of the positive tests come from people who have self-selected to receive a test because they are exhibiting symptoms. This testing scheme misses many people who are infected with COVID but who are asymptomatic or mildly symptomatic. This contributes to the undercount rate indicated above. (The self-selection aspect of the COVID diagnostic case sample is just one example of its non-random, uncontrolled nature. The lack of statistical design of the COVID sample leads to other issues not considered here. For further discussion of this topic [visit here]()).
+What is usually missing from the reports of the COVID case data is an acknowledgement that these numbers are just a sample of the total number of active COVID infections. Most of the positive tests come from people who have self-selected to receive a test because they are exhibiting symptoms. This testing scheme misses many people who are infected with COVID but who are asymptomatic or mildly symptomatic. This contributes to the undercount rate indicated above.
 
 There is yet another limitation with the case undercount rate over time. It hasn't been consistent. Antigen testing--the technology typically used to diagnosis COVID infections--shortages were acute in the early phase of the pandemic. The antigen test shortage was significant, but temporary. The shortages were addressed by mid summer 2020. Prior to that, numerous people went undiagnosed because they couldn't get tested.
 
@@ -50,8 +50,8 @@ Let's now take a look at a population-weighted average of the seroprevalence num
 
 There are a couple of things to point out about this chart. For the most part, the time series behave as one would expect. Seroprevalence increases predictably over time for each age group with a normal range of variation. One observation stands out. The fourth time period for the '0-17' age group seems to be an outlier. That's not the only one. The first two time periods for that age group also seem to be high relative to the others age groups. Is there something going on with this set of data? The following table shows that this group has a much higher rate of insufficient data than the others. Forty-three percent of state/time periods have insufficient data. The rest are under 8%. 
 
-| State/time period insufficient data by age group  |
-| :: | 
+| State/time period insufficient data by age group |
+| :---: | 
 
 | Age group | Percent |
 | :---: | :---: | 
@@ -88,7 +88,7 @@ Let's take a look at the average undercount rate by age group for December.
 
 The December undercount rate ranges from slightly under 2 for the older age group, to slightly under 3 for the other two age groups. It bears mentioning again that the ability to detect antibodies post infection decreases over time. At some point the seroprevalence estimate will no longer be a good estimate of all prior infections.
 
-On January 15, 2021, the CDC published an estimate of 4.6 infections (C.I. 4.0-5.4) for every 1 reported case of COVID through Decmber 2020 ([CDC COVID burden estimate](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/burden.html#anchor_1607017301754)). This rate had recently been revised downward in light of new data, but it is well above the undercount rate calculated from this population-weighted dataset that excludes New York and the 0-17 age group. 
+On January 15, 2021, the CDC published an estimate of 4.6 infections (C.I. 4.0-5.4) for every 1 reported case of COVID through Decmber 2020 ([CDC COVID burden estimate](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/burden.html#anchor_1607017301754)). This rate had recently been revised downward in light of new data, but it is well above the undercount rate calculated from this population-weighted dataset that excludes New York and the 0-17 age group. The discrepancies between the CDC estimate and the estimates that I derived from the seroprevalence data may be due, at least in part, to the fact that seroprevalence testing does not catch all infections.
 
 ### *Discussion*
 
